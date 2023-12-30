@@ -4,6 +4,9 @@
   <groupId>my.chu</groupId>
   <artifactId>trendInvestment</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>eureka-server</module>
+  </modules>
   <packaging>pom</packaging>
 
   <name>trendInvestment</name>
