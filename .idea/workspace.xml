@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[项目pom配置-springCloud]">
-      <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/my/chu/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/my/chu/AppTest.java" afterDir="false" />
+    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 服务注册中心-1]">
+      <change afterPath="$PROJECT_DIR$/third-part-index-data-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third-part-index-data-server/src/main/java/my/chu/ThirdPartIndexDataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/third-part-index-data-server/src/test/java/my/chu/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -82,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703935348718</updated>
-      <workItem from="1703935350869" duration="2735000" />
+      <workItem from="1703935350869" duration="3452000" />
     </task>
     <task id="LOCAL-00001" summary="[1]">
       <created>1703935835881</created>
@@ -105,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703936880463</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[eureka 服务注册中心]">
+      <created>1703938219875</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703938219875</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[eureka 服务注册中心-1]">
+      <created>1703938302897</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703938302897</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +138,8 @@
     <MESSAGE value="[1]" />
     <MESSAGE value="[1-1]" />
     <MESSAGE value="[项目pom配置-springCloud]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[项目pom配置-springCloud]" />
+    <MESSAGE value="[eureka 服务注册中心]" />
+    <MESSAGE value="[eureka 服务注册中心-1]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[eureka 服务注册中心-1]" />
   </component>
 </project>

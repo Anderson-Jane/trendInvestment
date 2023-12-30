@@ -38,3 +38,4 @@ build/
 ### Mac OS ###
 .DS_Store
 /.idea/
+/third-part-index-data-server/src/main/java/resource/static/indexes/
