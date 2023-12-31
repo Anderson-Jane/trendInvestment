@@ -4,18 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 服务注册中心-1]">
-      <change afterPath="$PROJECT_DIR$/third-part-index-data-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-part-index-data-server/src/main/java/my/chu/ThirdPartIndexDataApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/third-part-index-data-server/src/test/java/my/chu/AppTest.java" afterDir="false" />
+    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 模拟第三方指数数据获取服务]">
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/pojo/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/test/java/my/chu/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/third-part-index-data-server/src/main/java/resource/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/third-part-index-data-server/src/main/java/resource/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,11 +49,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/Software/IntelliJ IDEA 2022.2.1/trendInvestment/third-part-index-data-server/src/main/java/resource",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -52,7 +66,12 @@
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Software\IntelliJ IDEA 2022.2.1\trendInvestment\third-part-index-data-server\src\main\java\resource" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ThirdPartIndexDataApplication">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="my.chu.EurekaServerApplication" />
@@ -66,9 +85,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThirdPartIndexDataApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="third-part-index-data-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="my.chu.ThirdPartIndexDataApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.chu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.ThirdPartIndexDataApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -80,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703935348718</updated>
-      <workItem from="1703935350869" duration="3452000" />
+      <workItem from="1703935350869" duration="6507000" />
     </task>
     <task id="LOCAL-00001" summary="[1]">
       <created>1703935835881</created>
@@ -117,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703938302897</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[eureka 模拟第三方指数数据获取服务]">
+      <created>1703939010763</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703939010763</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +180,7 @@
     <MESSAGE value="[项目pom配置-springCloud]" />
     <MESSAGE value="[eureka 服务注册中心]" />
     <MESSAGE value="[eureka 服务注册中心-1]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[eureka 服务注册中心-1]" />
+    <MESSAGE value="[eureka 模拟第三方指数数据获取服务]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[eureka 模拟第三方指数数据获取服务]" />
   </component>
 </project>

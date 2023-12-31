@@ -4,4 +4,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 spring:
   application:
-    name: third-part-index-data-project
+    name: third-part-index-data-service
