@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]">
-      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/SpringContextUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/config/RedisCacheConfig.java" afterDir="false" />
+    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 模拟第三方指数数据采集服务-4, 配置redis缓存指数码]">
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/pojo/IndexData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-gather-store-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/IndexGatherStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/IndexGatherStoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
         <item itemvalue="Spring Boot.ThirdPartIndexDataApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
-        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +129,7 @@
       <updated>1703935348718</updated>
       <workItem from="1703935350869" duration="7082000" />
       <workItem from="1704089810781" duration="6719000" />
-      <workItem from="1704096995170" duration="437000" />
+      <workItem from="1704096995170" duration="1174000" />
     </task>
     <task id="LOCAL-00001" summary="[1]">
       <created>1703935835881</created>
@@ -204,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704092188263</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[eureka 模拟第三方指数数据采集服务-4, 配置redis缓存指数码]">
+      <created>1704097595080</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704097595080</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +250,8 @@
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-, 控制层类和启动类]" />
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-2, 控制层类和启动类]" />
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]" />
+    <MESSAGE value="[eureka 模拟第三方指数数据采集服务-4, 配置redis缓存指数码]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[eureka 模拟第三方指数数据采集服务-4, 配置redis缓存指数码]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

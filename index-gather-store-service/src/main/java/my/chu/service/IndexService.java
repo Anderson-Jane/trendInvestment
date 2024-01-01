@@ -31,7 +31,7 @@ public class IndexService {
 
     private List<Index> indexes;
 
-    public List<Index> fetchIndexData() {
+    public List<Index> fetchIndex() {
 
         List<Map> mapList = restTemplate.getForObject("http://127.0.0.1:8090/indexes/codes.json", List.class);
 
@@ -39,7 +39,7 @@ public class IndexService {
     }
     @HystrixCommand(fallbackMethod = "third_part_service_timeout")
     public List<Index> fresh() {
-        indexes =fetchIndexData(); // 获取指数数据到成员变量中
+        indexes =fetchIndex(); // 获取指数数据到成员变量中
         self.remove();
         return self.store();
     }
