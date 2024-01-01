@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 模拟第三方指数数据采集服务-2, 控制层类和启动类]">
+    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]">
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/SpringContextUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/config/RedisCacheConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-gather-store-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/IndexGatherStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/IndexGatherStoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,26 +46,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Software/IntelliJ IDEA 2022.2.1/trendInvestment/third-part-index-data-server/src/main/java/resource",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "8f4bdead10ca9248178a665ff29f0dc2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Software/IntelliJ IDEA 2022.2.1/trendInvestment/third-part-index-data-server/src/main/java/resource&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8f4bdead10ca9248178a665ff29f0dc2&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Software\IntelliJ IDEA 2022.2.1\trendInvestment\third-part-index-data-server\src\main\java\resource" />
@@ -110,9 +116,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
         <item itemvalue="Spring Boot.ThirdPartIndexDataApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +131,8 @@
       <option name="presentableId" value="Default" />
       <updated>1703935348718</updated>
       <workItem from="1703935350869" duration="7082000" />
-      <workItem from="1704089810781" duration="2202000" />
+      <workItem from="1704089810781" duration="6719000" />
+      <workItem from="1704096995170" duration="437000" />
     </task>
     <task id="LOCAL-00001" summary="[1]">
       <created>1703935835881</created>
@@ -190,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704091485619</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]">
+      <created>1704092188263</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704092188263</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +215,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -219,6 +245,18 @@
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-1, 控制层类和启动类]" />
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-, 控制层类和启动类]" />
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-2, 控制层类和启动类]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[eureka 模拟第三方指数数据采集服务-2, 控制层类和启动类]" />
+    <MESSAGE value="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
