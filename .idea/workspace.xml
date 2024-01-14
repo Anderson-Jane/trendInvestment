@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 模拟第三方指数数据采集服务-4, 配置redis缓存指数码]">
-      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/pojo/IndexData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexDataService.java" afterDir="false" />
+    <list default="true" id="565faca7-d6ea-4325-b65f-9add3c24bc76" name="Changes" comment="[eureka 模拟第三方指数数据采集服务-6, 配置定时器quartz]">
+      <change afterPath="$PROJECT_DIR$/index-codes-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/my/chu/IndexCodesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/my/chu/IpConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/my/chu/config/RedisCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/my/chu/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/my/chu/pojo/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/java/my/chu/service/IndexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-codes-service/src/test/java/my/chu/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +79,23 @@
       <recent name="D:\Software\IntelliJ IDEA 2022.2.1\trendInvestment\third-part-index-data-server\src\main\java\resource" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.IndexGatherStoreApplication">
+  <component name="RunManager" selected="Spring Boot.IndexCodesApplication">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="my.chu.EurekaServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.chu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndexCodesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="index-codes-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="my.chu.IndexCodesApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="my.chu.*" />
@@ -113,6 +134,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.IndexCodesApplication" />
         <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
         <item itemvalue="Spring Boot.ThirdPartIndexDataApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
@@ -129,7 +151,7 @@
       <updated>1703935348718</updated>
       <workItem from="1703935350869" duration="7082000" />
       <workItem from="1704089810781" duration="6719000" />
-      <workItem from="1704096995170" duration="1174000" />
+      <workItem from="1704096995170" duration="4503000" />
     </task>
     <task id="LOCAL-00001" summary="[1]">
       <created>1703935835881</created>
@@ -208,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704097595080</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[eureka 模拟第三方指数数据采集服务-5, 配置redis缓存指数数据]">
+      <created>1704098435215</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704098435215</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[eureka 模拟第三方指数数据采集服务-6, 配置定时器quartz]">
+      <created>1704099050002</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704099050002</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +287,10 @@
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-2, 控制层类和启动类]" />
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-3, 增加断路器]" />
     <MESSAGE value="[eureka 模拟第三方指数数据采集服务-4, 配置redis缓存指数码]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[eureka 模拟第三方指数数据采集服务-4, 配置redis缓存指数码]" />
+    <MESSAGE value="[eureka 模拟第三方指数数据采集服务-5, 配置redis缓存指数数据]" />
+    <MESSAGE value="[eureka 模拟第三方指数数据采集服务-6, 配置定时器]" />
+    <MESSAGE value="[eureka 模拟第三方指数数据采集服务-6, 配置定时器quartz]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[eureka 模拟第三方指数数据采集服务-6, 配置定时器quartz]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -260,6 +299,11 @@
           <url>file://$PROJECT_DIR$/index-gather-store-service/src/main/java/my/chu/service/IndexService.java</url>
           <line>35</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/index-codes-service/src/main/java/my/chu/IndexCodesApplication.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
